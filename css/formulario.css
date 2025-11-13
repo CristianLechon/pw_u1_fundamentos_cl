@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* para centrar usar estos 2 */
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #bbceba;
+}
+
+/* PseudoClase*/
+p:before {
+    /* habilitar el contenido del atributo type */
+    content: attr(type);
+    /* Ocupa el espacio completo del bloque del elemento p. */
+    display: block;
+    font-size: 20px;
+    color: #0b6e03;
+    margin-top: 30px;
+}
+
+input {
+    width: 280px;
+    border: none;
+    border-bottom: 2px solid #a7a7ba;
+    background: none;
+    color: grey;
+}
+
+input:focus {
+    /* para no marcar el cuadro */
+    outline: none;
+    border-bottom: 3px solid #0b6e03;
+}
+
+.formulario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 10px 30px #45454a;
+}
+
+button {
+    background: #0b6e03;
+    padding: 5px 40px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+}
+
+h2, header {
+    color: #45454a;
+    border-bottom: 2px solid #36363a;
+    font-size: 35px;
+}
