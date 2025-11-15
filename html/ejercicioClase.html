@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="../css/ejercicioClase.css">
+    <script src="../js/ejercicioClase.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Payment Details</h1>
+        </header>
+        <nav></nav>
+        <section>
+            <form action="#">
+                <div id="details">
+                <img id="id_card" src="../img/card.png" alt="">
+                <div id="id_msg_error" class="msg_error"></div>
+                <p type="Cardholder Name:">
+                    <span id="id_error_nombre" class="error_asterisco"></span><input id="id_nameCardholder" type="text">
+                </p>
+                <p type="Card Number:">
+                    <span id="id_error_numberCard" class="error_asterisco"></span><input id="id_numberCard" type="number">
+                </p>
+                <p type="Exp Date">
+                    <span id="id_error_fecha" class="error_asterisco"></span><input id="id_fecha" type="date">
+                </p>
+                <p type="CVV">
+                    <span id="id_error_cvv" class="error_asterisco"></span><input id="id_cvv" type="number">
+                </p>
+                <div class="boton">
+                    <button onclick="confirmar()">Confirm</button>
+                </div>
+            </div>
+            </form>
+        </section>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
